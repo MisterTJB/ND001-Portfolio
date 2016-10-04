@@ -1,0 +1,19 @@
+body {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  border-bottom: #7d97ad solid 0.25em;
+}
+
+.header-logo {
+  width: 50%;
+  border: red solid 1px;
+}
+
+.header-title {
+  width: 50%;
+  text-align: right;
+  border: red solid 1px;
+}
