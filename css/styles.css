@@ -12,6 +12,7 @@ header {
 
 .hero img {
   max-width: 100%;
+  margin: 10px auto;
 }
 
 .header-logo {
@@ -33,31 +34,39 @@ header {
   margin: auto;
 }
 
-h1, h2, h3 {
+h1, h2, h3, a {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
   color: #2d3c49;
   margin: 0px;
 }
 
+a {
+  font-size: 0.75em;
+}
+
 .flex-container {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .work-article {
-  min-width: 33%;
-  margin-right: 0px 0px;
+  width: 33%;
+  margin: 1% auto;
   text-align: center;
 }
 
+.work-article img {
+  max-width: 100%;
+}
+
 .work-article h3 {
-  font-variant: small-caps;
+  text-transform: uppercase;
   font-weight: 600;
 }
 
 .featured-work h2 {
   color: #7d97ad;
+  margin: 10px auto;
 }
 
 footer {
@@ -75,6 +84,24 @@ footer {
   .container {
     width: 900px;
     margin: 0 auto;
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .flex-container:after {
+  content: "";
+  flex: auto;
+}
+
+  .work-article {
+    width: 49.5%;
   }
 
 }
