@@ -1,3 +1,10 @@
+h1, h2, h3, a, p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  color: #2d3c49;
+  margin: 0px;
+}
+
 .container {
   width: 100%;
   box-sizing: content-box;
@@ -17,7 +24,6 @@ header {
 
 .header-logo {
   width: 50%;
-  /*border: red solid 1px;*/
 }
 
 #logo {
@@ -28,17 +34,9 @@ header {
 
 .header-title {
   width: 50%;
-  /*border: red solid 1px;*/
   text-transform: uppercase;
   text-align: right;
   margin: auto;
-}
-
-h1, h2, h3, a, p {
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 300;
-  color: #2d3c49;
-  margin: 0px;
 }
 
 .work-article a {
@@ -92,13 +90,18 @@ footer {
 
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
 
   .flex-container {
     display: flex;
     flex-wrap: wrap;
   }
 
+  /*
+    Fill the flex container with empty content to force
+    content to the left (c.f.
+    http://stackoverflow.com/questions/18744164/flex-box-align-last-row-to-grid)
+  */
   .flex-container:after {
     content: "";
     flex: auto;
