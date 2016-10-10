@@ -7,6 +7,7 @@ header {
   width: 100%;
   border-bottom: #7d97ad solid 0.25em;
   display: flex;
+  margin-bottom: 10px;
 }
 
 .hero img {
@@ -15,19 +16,28 @@ header {
 
 .header-logo {
   width: 50%;
-  border: red solid 1px;
+  /*border: red solid 1px;*/
 }
 
-.header-logo img {
-  max-width: 25%;
+#logo {
+  width: 75px;
+  margin: 5px 5px 0px 5px;
 }
 
 
 .header-title {
   width: 50%;
-  border: red solid 1px;
+  /*border: red solid 1px;*/
   text-transform: uppercase;
   text-align: right;
+  margin: auto;
+}
+
+h1, h2, h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  color: #2d3c49;
+  margin: 0px;
 }
 
 .flex-container {
@@ -41,9 +51,23 @@ header {
   text-align: center;
 }
 
+.work-article h3 {
+  font-variant: small-caps;
+  font-weight: 600;
+}
+
+.featured-work h2 {
+  color: #7d97ad;
+}
+
 footer {
   width: 100%;
   border-top: lightgrey solid 0.1em
+}
+
+.attribution {
+  padding: 5px;
+
 }
 
 @media screen and (min-width: 900px) {
